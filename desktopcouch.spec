@@ -7,7 +7,8 @@ Group:      Databases
 URL:        https://launchpad.net/desktopcouch	
 Source0:    %{name}-%{version}.tar.gz
 BuildRoot:  %{_tmppath}/%{name}-root
-BuildRequires: python
+BuildRequires: python python-setuptools
+
 Requires:      couchdb-bin
 BuildArch:     noarch
 
