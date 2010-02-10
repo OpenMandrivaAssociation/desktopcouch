@@ -8,7 +8,7 @@ URL:        https://launchpad.net/desktopcouch
 Source0:    %{name}-%{version}.tar.gz
 BuildRoot:  %{_tmppath}/%{name}-root
 BuildRequires: python python-setuptools
-
+BuildRequires: python-distutils-extra
 Requires:      couchdb-bin
 BuildArch:     noarch
 
