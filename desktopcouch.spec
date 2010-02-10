@@ -9,6 +9,7 @@ Source0:    %{name}-%{version}.tar.gz
 BuildRoot:  %{_tmppath}/%{name}-root
 BuildRequires: python python-setuptools
 BuildRequires: python-distutils-extra
+BuildRequires: intltool 
 Requires:      couchdb-bin
 BuildArch:     noarch
 
