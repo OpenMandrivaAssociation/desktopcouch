@@ -1,11 +1,11 @@
 Summary:    Integration of CouchDB storage into desktop applications	
 Name:       desktopcouch
-Version:    0.6.1
-Release:    %mkrel 3
+Version:    0.6.3
+Release:    %mkrel 1
 License:    LGPLv3
 Group:      Databases
 URL:        https://launchpad.net/desktopcouch	
-Source0:    %{name}-%{version}.tar.gz
+Source0:    http://launchpad.net/desktopcouch/trunk/%{version}/+download/%{name}-%{version}.tar.gz
 BuildRoot:  %{_tmppath}/%{name}-root
 BuildRequires: python python-setuptools
 BuildRequires: python-distutils-extra
