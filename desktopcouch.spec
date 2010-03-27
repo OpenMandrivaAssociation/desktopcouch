@@ -13,11 +13,19 @@ BuildRequires: intltool
 Requires:      couchdb-bin
 Requires:      python-couchdb
 Requires:      python-oauth
+Requires:      python-twisted-core
 BuildArch:     noarch
 
 %description
 Integration of CouchDB storage into desktop applications, for automatic 
 replication and synchronization of data between computers.
+
+%package tools
+Requires:   pygtk2.0
+Group:      Databases
+Summary: Desktopcouch tools 
+%description tools
+This package contains graphical tools for desktopcouch, to pair two computers.
 
 %prep
 %setup -q
@@ -37,10 +45,14 @@ rm -fr $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %config(noreplace) %{_sysconfdir}/xdg/desktop-couch/compulsory-auth.ini
 %{_datadir}/dbus-1/services/org.desktopcouch.CouchDB.service
-%{_datadir}/applications/*.desktop
 %{py_puresitedir}/%{name}/
 %{py_puresitedir}/*.egg-info
-%{_bindir}/*
 %{_prefix}/lib/%{name}/
-%{_mandir}/man1/*
 %{_datadir}/%{name}/
+
+%files tools
+%defattr(-,root,root)
+%{_bindir}/*
+%{_mandir}/man1/*
+%{_datadir}/applications/*.desktop
+
