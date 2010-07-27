@@ -1,14 +1,14 @@
 Summary:    Integration of CouchDB storage into desktop applications	
 Name:       desktopcouch
-Version:    0.6.4
-Release:    %mkrel 2
+Version:    0.6.6
+Release:    %mkrel 1
 License:    LGPLv3
 Group:      Databases
 URL:        https://launchpad.net/desktopcouch	
 Source0:    http://launchpad.net/desktopcouch/trunk/%{version}/+download/%{name}-%{version}.tar.gz
 # Make it work with python-couchdb 0.7
 # https://bugs.launchpad.net/bugs/566073
-Patch0:     desktopcouch-0.6.4-python-couchdb0.7-compat.patch
+Patch0:     desktopcouch-0.6.6-python-couchdb0.7-compat.patch
 BuildRoot:  %{_tmppath}/%{name}-root
 BuildRequires: python python-setuptools
 BuildRequires: python-distutils-extra
@@ -32,7 +32,7 @@ This package contains graphical tools for desktopcouch, to pair two computers.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch0 -p1 -b .pycouchdb
 
 %build
 python setup.py build
