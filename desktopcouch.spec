@@ -1,7 +1,7 @@
 Summary:    Integration of CouchDB storage into desktop applications	
 Name:       desktopcouch
-Version:    0.6.6
-Release:    %mkrel 4
+Version:    0.6.9b
+Release:    %mkrel 1
 License:    LGPLv3
 Group:      Databases
 URL:        https://launchpad.net/desktopcouch	
@@ -33,7 +33,6 @@ This package contains graphical tools for desktopcouch, to pair two computers.
 
 %prep
 %setup -q
-%patch0 -p0 -b .pycouchdb
 
 %build
 python setup.py build
