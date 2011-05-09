@@ -1,16 +1,11 @@
 Summary:    Integration of CouchDB storage into desktop applications	
 Name:       desktopcouch
-Version:    0.6.9b
+Version:    1.0.7
 Release:    %mkrel 1
 License:    LGPLv3
 Group:      Databases
 URL:        https://launchpad.net/desktopcouch	
 Source0:    http://launchpad.net/desktopcouch/trunk/%{version}/+download/%{name}-%{version}.tar.gz
-# Make it work with python-couchdb 0.7
-# https://bugs.launchpad.net/bugs/566073
-# the patch come from : https://code.launchpad.net/~vds/desktopcouch/desktopcouch_couchdb_0_7
-Patch0:     desktopcouch-0.6.6-python-couchdb0.7-compat.patch
-BuildRoot:  %{_tmppath}/%{name}-root
 BuildRequires: python python-setuptools
 BuildRequires: python-distutils-extra
 BuildRequires: intltool 
