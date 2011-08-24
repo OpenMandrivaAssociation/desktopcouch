@@ -1,7 +1,7 @@
 Summary:    Integration of CouchDB storage into desktop applications	
 Name:       desktopcouch
 Version:    1.0.7
-Release:    %mkrel 1
+Release:    %mkrel 2
 License:    LGPLv3
 Group:      Databases
 URL:        https://launchpad.net/desktopcouch	
@@ -43,6 +43,7 @@ rm -fr $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %config(noreplace) %{_sysconfdir}/xdg/desktop-couch/compulsory-auth.ini
+%dir %{_sysconfdir}/xdg/desktop-couch
 %{_datadir}/dbus-1/services/org.desktopcouch.CouchDB.service
 %{py_puresitedir}/%{name}/
 %{py_puresitedir}/*.egg-info
