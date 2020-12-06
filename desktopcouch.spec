@@ -1,7 +1,7 @@
 Summary:    Integration of CouchDB storage into desktop applications	
 Name:       desktopcouch
-Version:    1.0.7
-Release:    3
+Version:    1.0.8
+Release:    1
 License:    LGPLv3
 Group:      Databases
 URL:        https://launchpad.net/desktopcouch	
