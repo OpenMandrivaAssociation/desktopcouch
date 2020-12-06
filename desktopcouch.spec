@@ -42,6 +42,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
+%config(noreplace) %{_sysconfdir}/xdg/desktop-couch/default.ini
 %config(noreplace) %{_sysconfdir}/xdg/desktop-couch/compulsory-auth.ini
 %dir %{_sysconfdir}/xdg/desktop-couch
 %{_datadir}/dbus-1/services/org.desktopcouch.CouchDB.service
