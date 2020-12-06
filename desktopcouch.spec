@@ -49,6 +49,7 @@ rm -fr $RPM_BUILD_ROOT
 %{py_puresitedir}/*.egg-info
 %{_prefix}/lib/%{name}/
 %{_datadir}/%{name}/
+%{_datadir}/apport/package-hooks/source_desktopcouch.py
 
 %files tools
 %defattr(-,root,root)
