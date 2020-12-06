@@ -20,7 +20,7 @@ Integration of CouchDB storage into desktop applications, for automatic
 replication and synchronization of data between computers.
 
 %package tools
-Requires:   pygtk2.0
+Recommends:   pygtk2.0
 Group:      Databases
 Summary: Desktopcouch tools 
 %description tools
