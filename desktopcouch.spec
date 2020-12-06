@@ -9,10 +9,10 @@ Source0:    http://launchpad.net/desktopcouch/trunk/%{version}/+download/%{name}
 BuildRequires: python python-setuptools
 BuildRequires: python-distutils-extra
 BuildRequires: intltool 
-Requires:      couchdb-bin
-Requires:      python-couchdb
-Requires:      python-oauth
-Requires:      python-twisted-core
+Recommends:      couchdb-bin
+Recommends:      python-couchdb
+Recommends:      python-oauth
+Recommends:      python-twisted-core
 BuildArch:     noarch
 
 %description
